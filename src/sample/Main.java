@@ -22,7 +22,7 @@ public class Main extends Application {
         While(resultSet.next()); {
             System.out.println(resultSet.getString("NAME"));
         }
-        System.out.println("yeet");
+
 
 
         conn.close();
