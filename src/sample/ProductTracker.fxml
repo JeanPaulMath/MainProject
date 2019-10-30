@@ -2,13 +2,14 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" stylesheets="@../Viperdrive.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" stylesheets="@Viperdrive.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <TabPane prefHeight="300.0" prefWidth="300.0" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="35.0" tabMaxWidth="100.0" tabMinHeight="25.0" tabMinWidth="50.0" AnchorPane.topAnchor="0.0">
         <tabs>
@@ -34,7 +35,11 @@
           </Tab>
           <Tab fx:id="ProjectCat" text="Project Catalog">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox layoutX="14.0" layoutY="69.0" prefWidth="150.0" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="41.0" prefHeight="20.0" prefWidth="118.0" text="Product Selection" textAlignment="CENTER" />
+                     </children></AnchorPane>
             </content>
           </Tab>
         </tabs>

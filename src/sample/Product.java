@@ -1,3 +1,5 @@
+package sample;
+
 public abstract class Product implements Item {
 
     private int id;
@@ -22,7 +24,7 @@ public abstract class Product implements Item {
         return type;
     }
 
-    @Override
+
     public String toString() {
         return "type:'" + type + '\'' + ", manufacturer:'" + manufacturer + '\'' + ", name:'" + name + '\'' ;
     }

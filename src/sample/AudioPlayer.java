@@ -1,3 +1,5 @@
+package sample;
+
 public class AudioPlayer extends Product implements MultimediaControl {
 
     private String audioSpecification;
@@ -5,9 +7,17 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
     public AudioPlayer(String prodName, String manufacture, String audiospecs) {
         super(prodName);
-        super.getManufacturer();
+        super.setManufacturer(manufacture);
         audioSpecification = audiospecs;
 
+    }
+
+    @Override
+     public String toString() {
+        return "AudioPlayer{" +
+                "audioSpecification='" + audioSpecification + '\'' +
+                ", mediaType='" + mediaType + '\'' +
+                '}';
     }
 
     @Override
@@ -27,6 +37,10 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
     @Override
     public void next() {
+
+    }
+
+    public static void Audio(String[] args) {
 
     }
 }
