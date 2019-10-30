@@ -14,30 +14,9 @@ public class Main extends Application {
         //connecting to H2 database
         Class.forName("org.h2.Driver");
         Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa","");
-
-        //sample select Statement from test table that is provided by H2
-        Statement stmt = conn.createStatement();
-        ResultSet resultSet = stmt.executeQuery("SELECT  * FROM  TEST");
-
-        While(resultSet.next()); {
-            System.out.println(resultSet.getString("NAME"));
-        }
-
-
-
         conn.close();
-
-
         launch(args);
     }
-
-    private static void While(boolean next) {
-
-    }
-
-
-
-
 
     //primary stage method that displays the sample fxml file
     @Override

@@ -1,5 +1,5 @@
 package sample;
-
+import java.util.HashMap;
 public abstract class Product implements Item {
 
     private int id;
@@ -8,8 +8,7 @@ public abstract class Product implements Item {
     private String name;
 
     //remember to create a comboBox to select type
-    enum Type{ Audio, visual, AudioMobile, VisualMobile;}
-    enum Code{AU,VI,AM,VM;}
+   // HashMap<String,String> itemType = new HashMap<>();
 
 
     public Product(String prodName){
