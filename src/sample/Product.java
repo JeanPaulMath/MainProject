@@ -8,11 +8,10 @@ public abstract class Product implements Item {
     private String name;
 
     //remember to create a comboBox to select type
-   // HashMap<String,String> itemType = new HashMap<>();
-
 
     public Product(String prodName){
         this.name = prodName;
+
     }
 
     public void setId(int id) {

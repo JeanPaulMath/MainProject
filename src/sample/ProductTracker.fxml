@@ -37,7 +37,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <ComboBox fx:id="ProductTypeCombo" layoutX="14.0" layoutY="69.0" prefWidth="150.0" />
+                        <ComboBox fx:id="ProductTypeCombo" layoutX="14.0" layoutY="69.0" onAction="#ProdTypeSelection" prefWidth="150.0" />
                         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="41.0" prefHeight="20.0" prefWidth="118.0" text="Product Type" textAlignment="CENTER" />
                         <ComboBox fx:id="ProductCodeCombo" layoutX="14.0" layoutY="160.0" prefWidth="150.0" />
                         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="124.0" prefHeight="20.0" prefWidth="118.0" text="Product Code" textAlignment="CENTER" />
