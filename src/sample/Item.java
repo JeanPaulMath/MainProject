@@ -4,7 +4,7 @@ public interface Item {
 
     int getId();
 
-    void setName(String personName);
+    void setName(String prodName);
 
     String getName();
 

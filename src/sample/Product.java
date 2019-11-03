@@ -11,7 +11,6 @@ public abstract class Product implements Item {
 
     public Product(String prodName){
         this.name = prodName;
-
     }
 
     public void setId(int id) {

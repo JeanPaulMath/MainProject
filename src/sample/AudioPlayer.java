@@ -5,10 +5,10 @@ public class AudioPlayer extends Product implements MultimediaControl {
     private String audioSpecification;
     private String mediaType;
 
-    public AudioPlayer(String prodName, String manufacture, String audiospecs) {
+    public AudioPlayer(String prodName, String manufacture, String audioSpecs) {
         super(prodName);
         super.setManufacturer(manufacture);
-        audioSpecification = audiospecs;
+        audioSpecification = audioSpecs;
 
     }
 
@@ -37,7 +37,16 @@ public class AudioPlayer extends Product implements MultimediaControl {
         System.out.println("Playing next track.");
     }
 
-    public static void Audio(String[] args) {
-
+    /**
+     * This driver class is used to test if occurrences of
+     * "AudioPlayer" can be instantiated with the use of the
+     * MultiMedia methods.
+     */
+    public static void main(String[] args) {
+        AudioPlayer test = new AudioPlayer("iPod","Apple","mp3");
+        test.play();
+        test.previous();
+        test.stop();
+        test.next();
     }
 }

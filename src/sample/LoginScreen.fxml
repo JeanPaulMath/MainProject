@@ -6,17 +6,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="275.0" prefWidth="350.0" stylesheets="@Viperdrive.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane prefHeight="300.0" prefWidth="350.0" stylesheets="@Viperdrive.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Label id="Welcome" alignment="CENTER" contentDisplay="CENTER" layoutX="71.0" layoutY="38.0" prefHeight="49.0" prefWidth="247.0" text="Welcome" textAlignment="JUSTIFY">
+      <Label id="Welcome" alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="39.0" prefHeight="49.0" prefWidth="247.0" text="Welcome" textAlignment="JUSTIFY">
          <font>
             <Font name="System Italic" size="48.0" />
          </font>
       </Label>
-      <TextField id="username" layoutX="165.0" layoutY="124.0" />
-      <TextField layoutX="165.0" layoutY="175.0" />
+      <TextField id="username" fx:id="usernameField" layoutX="165.0" layoutY="124.0" />
+      <TextField fx:id="passwordField" layoutX="165.0" layoutY="175.0" />
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="124.0" prefHeight="29.0" prefWidth="121.0" text="Username" textAlignment="JUSTIFY" />
-      <Label alignment="CENTER" layoutX="21.0" layoutY="175.0" prefHeight="29.0" prefWidth="121.0" text="Label" />
-      <Button layoutX="266.0" layoutY="211.0" mnemonicParsing="false" text="Submit" />
+      <Label alignment="CENTER" layoutX="21.0" layoutY="175.0" prefHeight="29.0" prefWidth="121.0" text="Password" />
+      <Button fx:id="loginButton" layoutX="255.0" layoutY="222.0" mnemonicParsing="false" onAction="#onLoginClick" text="Login" />
    </children>
 </AnchorPane>
